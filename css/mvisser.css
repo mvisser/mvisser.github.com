@@ -6,6 +6,11 @@ body{
 h1{
     color:#dd8800;
 }
+h2{
+    padding:0px;
+    margin:0px;
+    text-shadow: 2px 2px 2px #aaa;
+}
 .title{
     text-align:center;
     text-shadow: 5px 5px 5px black;
