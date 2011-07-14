@@ -2,9 +2,16 @@
 <html>
     <head>
         <title>{{ page.title }}</title>
+        <link rel="stylesheet" type="text/css" href="/css/mvisser.css" />
     </head>
     <body>
-        <h1>{{ page.title }}</h1>
-        {{ content }}
+        <h1 class="title">{{ page.title }}</h1>
+        <div id="content" >
+            {{ content }}
+        </div>
+        <div id=footer>
+            <strong>Copyright Matthew Visser, 2011 | Powered by VIM and
+                Jekyll.</strong>
+        </div>
     </body>
 </html>

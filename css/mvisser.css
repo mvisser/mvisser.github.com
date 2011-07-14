@@ -1,0 +1,30 @@
+body{
+    background-color:#272727;
+    /*background-color:white;*/
+}
+h1{
+    color:orange;
+}
+.title{
+    text-align:center;
+    text-shadow: 5px 5px 5px black;
+}
+#footer{
+    padding:10px;
+    color:#1793d1;
+    text-shadow: 5px 5px 5px black;
+}
+#content{
+    background-color:#dddddd;
+    /* border: 2px solid #99f; */
+    border: 1px solid black;
+    padding:9px;
+    border-radius:10px;
+    -moz-box-shadow: 10px 10px 5px black;
+    -webkit-box-shadow: 10px 10px 5px black;
+    box-shadow: 10px 10px 5px black;
+}
+a{
+    color:#1793d1;
+    text-decoration:none;
+}
