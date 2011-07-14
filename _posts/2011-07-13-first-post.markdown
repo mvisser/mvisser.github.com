@@ -1,6 +1,6 @@
 ---
 layout: default
-title First Post
+title: First Post
 ---
 
-This is the first post for Jekyll on github hosting!
+This is the first post with Jekyll on github hosting!
