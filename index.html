@@ -1,8 +1,11 @@
-<html>
-    <head>
-        <title>Matthew Visser</title>
-    </head>
-    <body>
-        <h1>hi there</h1>
-    </body>
-</html>
+---
+layout: default
+title: Matthew Visser
+---
+
+{% for post in site.posts limit:5 %}
+
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{{ post.content }}
+<em> posted on {{ post.date | date_to_long_string }}.</em>
+{% endfor %}
