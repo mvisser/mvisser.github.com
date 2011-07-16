@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>/dev/shm - {{ page.title }}</title>
+        <link rel="stylesheet" type="text/css" href="/css/mvisser.css" />
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="title">/dev/shm</h1>
+            <h2 class="title_header">{{ page.title }}</h2>
+            <div class="post">
+                {{ content }}
+                <em class="datestuffs">Posted on {{ page.date | date_to_long_string }}.</em>
+            </div>
+            <div id=footer>
+                <strong>Copyright &#169; 2011 Matthew Visser</strong>
+            </div>
+        </div>
+    </body>
+</html>
+
