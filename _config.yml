@@ -1,5 +1,5 @@
 safe: true
 lsi: false
-pygments: false
+pygments: true
 auto: true
 permalink: none
