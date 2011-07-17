@@ -9,5 +9,7 @@ title: "Test Post"
 
 
 {% highlight ruby %}
-    int main();
+    int main(){
+        printf("Hi there.");
+    }
 {% endhighlight %}
