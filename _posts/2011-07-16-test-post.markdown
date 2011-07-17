@@ -7,9 +7,8 @@ title: "Test Post"
 ## h2 ##
 ### h3 ###
 
+`test` something here
 
-{% highlight ruby %}
-int main(){
-    printf("Hi there.");
-}
-{% endhighlight %}
+    int main(){
+        printf("Hi there.");
+    }

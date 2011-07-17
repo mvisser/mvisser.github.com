@@ -68,10 +68,17 @@ blockquote{
     padding-right: 10px;
     background-color: #ccf;
 }
-/*
-code{
-    border:1px solid #1793d1;
-    padding:1px;
+pre code {
+    display:block !important;
+    border:medium none !important;
+    padding:3px;
     background-color: #ccf;
 }
-*/
+pre{
+    border: 1px solid gray;
+}
+code{
+    padding:3px;
+    border: 1px solid gray;
+    background-color: #ccf;
+}
