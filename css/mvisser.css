@@ -17,11 +17,15 @@ h3{
 h2.title_header{
     margin-top:30px;
     margin-bottom:5px;
-    color:#17a3f1;
+    color:#17a3f1 !important;
     font-size:1.4em;
     /*padding:0px;
     margin:0px; */
     text-shadow: 5px 5px 5px black;
+}
+h2 a{
+    color:#17a3f1 !important;
+    text-decoration:none !important;
 }
 .title{
     font-size:1.75em;
@@ -54,10 +58,20 @@ h2.title_header{
     box-shadow: 10px 10px 5px black;
     font-size:1em;
 }
-a{
-    color:#1793d1;
-    text-decoration:none;
+a:link {
+    color:#33f;
+    text-decoration:underline;
 }
+a:visited {
+    color:black;
+}
+a:hover {
+    color:#c81;
+}
+a:active {
+    color:red;
+}
+
 .datestuffs{
     font-size:0.9em;
 }
@@ -73,14 +87,14 @@ blockquote{
 pre code {
     display:block !important;
     border:medium none !important;
-    padding:3px;
+    padding:5px;
     background-color: #ccf;
 }
 pre{
     border: 1px solid gray;
 }
 code{
-    padding:3px;
+    padding:1px;
     border: 1px solid gray;
     background-color: #ccf;
 }
