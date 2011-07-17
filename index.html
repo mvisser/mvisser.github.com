@@ -3,12 +3,6 @@ layout: default
 title: /dev/shm
 ---
 
-{% highlight ruby %}
-def foo
-    puts 'foo'
-end
-{% endhighlight %}
-
 {% for post in site.posts limit:5 %}
 
 <h2 class="title_header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
