@@ -48,6 +48,8 @@ h2 a{
     margin-right:auto;
 }
 .post{
+    padding:25px !important;
+    padding-top:15px !important;
     background-color:#eee;
     /* border: 2px solid #99f; */
     border: 1px solid black;
