@@ -1,0 +1,41 @@
+---
+layout: post
+title: Trinity Rescue Kit
+---
+
+Recently I've had to rescue a few of my friends' Windows machines from one problem or another.  To do this, I started using a rescue kit name [Trinity Rescue Kit](http://www.trinityhome.org). This rescue kit is a live CD of a Linux distribution packed with everything you would ever want when trying to restore a system.
+Some of the things I've used are:
+
+* Windows password reset
+* Disk copies
+* `fsck`
+
+But it can do much more!  You can host a file server with the live CD, do a virus scan, and host an ssh server.  The documentation is included on the disk, and you can view it with links in a frame-buffer console that will show the images and everything as well! This is definitely going to be my go-to rescue disk from now on.
+
+You can use TRK (Trinity Rescue Kit) from a live CD or from a bootable USB drive, which makes it even better.
+
+Windows Resuscitation
+---------------------
+
+Trinity offers many options to help restore a Windows system to a working state.  It is, however, incapable of restoring a hard disk partitioned as NTFS due to limitation of the Linux driver for NTFS. While this is sad, it does have utilities to clean up junk files, assembly cache, and perform an anti-virus check. It can also make duplicates of a drive, or try to restore files, which is always handy.
+
+Another wonderful feature is that it can reset windows passwords for Administrator and any other user.  This is helpful if you have forgetful room-mates ;). While the password change didn't work for Windows 7 for me, blanking the password did - you can always log in and change the password once you have access anyways.
+
+Restoration With Style
+----------------------
+
+TRK has some pretty awesome boot graphics.  I noticed that it was using a frame-buffer console with a nice background including its logo.  It also uses the graphical console-only version of links on the frame-buffer console, which means that the documentation can even show screen shots. This makes it so much nicer to work with TRK.
+
+How Do I Get It?
+----------------
+
+You can get TRK from the homepage. You can download an executable that will burn TRK right to a CD or DVD in Windows or you can burn it to a cd on linux with
+    
+    $ cdrecord device=/dev/cdrom trinity.iso
+
+The exact command will vary depending on your version of `cdrecord` and the device your CD drive is.
+
+The documentation for TRK also has a handy guide on how to get TRK to a USB drive [here](http://trinityhome.org/Home/index.php?content=5.1_HOW_TO_INSTALL_UPGRADE_YOUR_USB_MEDIA_TO_RUN_T&front_id=12&lang=en&locale=en).
+
+
+**Pro Tip**: Visit hak5.org at [this page](http://hak5.org/episodes/haktip-4) or [this page](http://hak5.org/episodes/episode-524) to create a multiboot USB with all of your favourite live distros on one drive!

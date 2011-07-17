@@ -15,7 +15,7 @@ Create a Repository Supporting Jekyll
 The first step to the entire process is to create a repository on github. These
 are the steps I followed:
 
-1. **Add a new repository to github**, and give the required information.  
+1. **Add a new repository to github**, and give the required information.
     - The name of the repository should be `username.github.com`.
 
 2. **Create the repository locally**, with the same name as above. If you are
@@ -34,8 +34,8 @@ are the steps I followed:
       use the same layout for both if you wish.
     * `_config.yml`  This is where all of your configuration goes.  [The Jekyll
       Documentation](https://github.com/mojombo/jekyll/wiki/configuration)
-      describes the many options given to you very well.  
-      
+      describes the many options given to you very well.
+
     Now add everything to the repository for your first commit with the following
     commands inside the `username.github.com` directory.
 
@@ -43,18 +43,18 @@ are the steps I followed:
         $ touch .gitignore
         $ git add .
         $ git commit
-      
+
 3. **Add styling to your page!** This part was definitely fun for me. I haven't
    played around with CSS a whole lot since high-school because I've mostly been
    using frameworks at work or haven't bothered with it.  You can add your
-   stylesheet wherever you want, but I opted to 
+   stylesheet wherever you want, but I opted to
 
 4. **Add content!**  As stated before
 
 5. **Push to github!** Commit your changes and push to github.  They should
    generate the page and start hosting it at `http://username.github.com`!
    You're done!
-   
+
 
 Set up Pygments
 ---------------
@@ -112,7 +112,7 @@ recommend doing it often...
 Reflection
 ----------
 
-So the process was mostly painless, wasn't it? 
+So the process was mostly painless, wasn't it?
 
 I like the way things are laid out with Jekyll. Once you have your styling and
 templates set up, it's very easy to just write your post in something easily
