@@ -60,7 +60,7 @@ a{
     font-size:0.9em;
 }
 pre{
-    margin:20px;;
+    margin:20px;
 }
 blockquote{
     border:1px solid #1793d1;
@@ -68,8 +68,10 @@ blockquote{
     padding-right: 10px;
     background-color: #ccf;
 }
+/*
 code{
     border:1px solid #1793d1;
     padding:1px;
     background-color: #ccf;
 }
+*/
