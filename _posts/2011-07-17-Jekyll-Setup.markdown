@@ -73,17 +73,40 @@ This will generate a css file to highlight code after it's run through pygments.
 
 Now you can highlight code that you have in your posts with the following snippet
 
-    {% highlight c %}
+    {{ "{% highlight c " }}%}
     #include<stdio.h>
     int main(int argc, char * argv[] ){
         printf( "Hello World!");
     }
-    {% endhighlight %}
+    {{ "{% endhighlight " }}%}
 
 Not too hard, right?  I had some issues getting this to work on my local
 machine, which was a little bit frustrating. For some reason, pygments decided
 to eat all of the text it was given and output nothing.  C'est la vie. I
 decided to not use pygments with my site until I could get it working locally.
+It seems, though, that github will always try to pygmentize, since it
+over-rides your setting for pygments.
+
+Tips &  Tricks
+--------------
+
+Here are some tips and tricks for writing a blog in Markdown in Jekyll. I'll be
+updating these as I go.
+
+### Escaping Liquid Tags ###
+
+If you want to escape the liquid tags (like when I entered the `highlight` tag,
+you can use something like the following
+
+    {{ "{{" }} {{ '"{% tag ' }}{{ "}}" }}%}
+
+There is a distinction between single and double quotes. If you want to display
+a double quote, you must do something like
+
+    {{ "{{ '" }}{{ '"' }}{{'" }}' }}
+
+The escaping gets more and more confusing the further you go... I wouldn't
+recommend doing it often...
 
 
 Reflection
