@@ -9,7 +9,7 @@ title: "Test Post"
 
 
 {% highlight ruby %}
-    int main(){
-        printf("Hi there.");
-    }
+int main(){
+    printf("Hi there.");
+}
 {% endhighlight %}
