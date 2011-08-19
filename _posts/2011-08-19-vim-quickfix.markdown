@@ -81,13 +81,40 @@ There are a few things to note:
   options that `grep` normally has inserted before the pattern, i.e. `:grep -r
   /pattern/`.
 
-What If I Want Multiple Lists?
-------------------------------
+Odds and Ends
+-------------
+
+### What if I want multiple lists? ###
 
 If you want to have multiple lists, you want to use *Location Lists*. These are
 basically the same as quickfix, except you can have one per window. The
 `:lmake`, `:lgrep`, and `:lvimgrep` commands will do the same as `make` or `grep`,
 but use a Location List instead.
 
+### Do I have to type the commands every time? ###
 
-Hope you found this information useful, and Happy Vimming!
+Nope, I would suggest you map them in your `~/.vimrc` somewhere, or use an
+awesome plug-in like Vim-Unimpaired by Tim Pope.
+
+### What if I want to get an old quick-fix list back? ###
+
+You can use commands like `:colder` or `:cnewer` to go backwards and forwards in
+quick-fix history.
+
+### What if I already have the errors in a file or buffer? ###
+
+The command `:cfile filename` loads a list from a file. `:cbuffer` loads a list
+from the current buffer.
+
+### Help! I'm lost! ###
+
+Vim's help for the quick-fix and location lists is available by using the
+command `:help quickfix`.  Good luck!
+
+
+Hope you found this information useful. Vim is an absolute joy to use once you
+figure out a work-flow that works for you. Take some time to get to know some of
+the features it has that make your life easier and you're well on your way to
+enjoying happy, productive coding with Vim.
+
+Happy Vimming!
