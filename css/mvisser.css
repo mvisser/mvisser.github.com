@@ -28,10 +28,11 @@ h2 a{
     text-decoration:none !important;
 }
 .title{
-    font-size:1.75em;
-    color:#bb7700;
-    text-align:center;
-    text-shadow: 5px 5px 5px black;
+    font-size:1.75em !important;
+    color:#bb7700 !important;
+    text-align:center !important;
+    text-shadow: 5px 5px 5px black !important;
+    text-decoration: none !important;
 }
 #footer{
     padding:10px;
