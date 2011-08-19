@@ -84,13 +84,13 @@ blockquote{
     border:1px solid #1793d1;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #ccf;
+    background-color: #adf;
 }
 pre code {
     display:block !important;
     border:medium none !important;
     padding:5px;
-    background-color: #ccf;
+    background-color: #adf;
 }
 pre{
     border: 1px solid gray;
@@ -98,5 +98,5 @@ pre{
 code{
     padding:1px;
     border: 1px solid gray;
-    background-color: #ccf;
+    background-color: #adf;
 }
