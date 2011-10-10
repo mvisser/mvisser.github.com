@@ -1,5 +1,7 @@
 body{
     background-color:#272727;
+	background-image:url('/backgrounds/black-Linen.png');
+	background-repeat:repeat;
     font-family: Verdana, sans-serif;
     /*background-color:white;*/
 }
