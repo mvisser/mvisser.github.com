@@ -1,0 +1,47 @@
+---
+layout: post
+title: Using tsocks for Privacy
+---
+
+I really hate using public wifi. I hate the fact that just anyone could look at
+my network traffic. Call me paranoid, but it's true. This is why I usually use
+an ssh tunnel for most of my work while at coffee shops or at an untrusted
+place. I do this using
+
+	ssh -N -f -D 8080 my.secure.host
+
+So great, I have a local SOCKS proxy set up at my localhost now, but how do I
+use it? Firefox has proxy options, so that's fine. I like a bit more control
+over it, so I use [Foxy Proxy][1]. Don't forget when you do this to also
+forward your DNS queries through the proxy as well, otherwise a lot of this is
+going to be useless. You can do that in firefox with the `about:config` setting
+`network.proxy.socks_remote_dns`.
+
+So this did it for me for a while. I turned off my email syncing and went
+happily on my way browsing. But then one day I wanted to use `wget` to download
+a file and realized that its proxy settings don't work well with SOCKS. I
+searched around but didn't really find out if it could work, but stumbled on a
+program called `tsocks`.
+
+`tsocks` runs whatever program you give it as an argument, with the addition of
+passing any network traffic it wants through a SOCKS proxy of your choosing. It
+reads the details of this from its configuration file.  Just set your proxy to
+`localhost`, your port to whatever you used, in this case 8080, and make sure
+it knows what your local network is with its settings so you can access local
+computers too. An example file looks like this:
+
+	local = 192.168.0.0/255.255.0.0
+	local = 10.0.0.0/255.0.0.0
+	server = 127.0.0.1
+	server_type = 5
+	server_port = 8080 
+
+And that's it! Now just run a command like wget with it:
+
+	tsocks wget http://my.important/file
+
+And it's done so using your awesome, encrypted proxy. No snooping or packet
+modification allowed!
+
+
+[1]: http://getfoxyproxy.org "Foxy Proxy"
